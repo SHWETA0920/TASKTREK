@@ -1,0 +1,65 @@
+/* .tag {
+  font-size: 14px;
+  font-weight: 500px;
+  background-color: #f9f9f9;
+  border: 1px solid #dfe3e6;
+  border-radius: 5px;
+  padding: 2px 10px;
+  margin-right: 10px;
+  cursor: pointer;
+} */
+/* Tag.css */
+.tag {
+  display: inline-flex;
+  align-items: center;
+  padding: 4px 10px;
+  border-radius: 20px;
+  font-size: 0.75rem;
+  font-weight: 600;
+  text-transform: uppercase;
+  letter-spacing: 0.5px;
+  transition: all 0.2s ease;
+  border: 1px solid transparent;
+}
+
+.tag.selected {
+  background: linear-gradient(135deg, #667eea, #764ba2);
+  color: white;
+  box-shadow: 0 2px 8px rgba(102, 126, 234, 0.3);
+}
+
+.tag:not(.selected) {
+  background: rgba(255, 255, 255, 0.8);
+  color: #6b7280;
+  border: 1px solid #e5e7eb;
+}
+
+.tag:hover {
+  transform: translateY(-1px);
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.15);
+}
+
+/* Specific tag colors based on content */
+.tag[data-tag="javascript"],
+.tag[data-tag="JavaScript"] {
+  background: linear-gradient(135deg, #f7df1e, #d1b10d) !important;
+  color: #000 !important;
+}
+
+.tag[data-tag="html"],
+.tag[data-tag="HTML"] {
+  background: linear-gradient(135deg, #e34c26, #c53707) !important;
+  color: white !important;
+}
+
+.tag[data-tag="css"],
+.tag[data-tag="CSS"] {
+  background: linear-gradient(135deg, #264de4, #1a36b8) !important;
+  color: white !important;
+}
+
+.tag[data-tag="react"],
+.tag[data-tag="React"] {
+  background: linear-gradient(135deg, #61dafb, #21a0c4) !important;
+  color: #000 !important;
+}
